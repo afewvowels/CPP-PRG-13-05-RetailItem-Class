@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25947A221FBE153B00A68F8C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25947A211FBE153B00A68F8C /* main.cpp */; };
+		25947A2A1FBE163600A68F8C /* RetailItem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25947A281FBE163600A68F8C /* RetailItem.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		25947A1E1FBE153B00A68F8C /* CPP-PRG-13-05-RetailItem-Class */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "CPP-PRG-13-05-RetailItem-Class"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25947A211FBE153B00A68F8C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		25947A281FBE163600A68F8C /* RetailItem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RetailItem.cpp; sourceTree = "<group>"; };
+		25947A291FBE163600A68F8C /* RetailItem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RetailItem.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				25947A211FBE153B00A68F8C /* main.cpp */,
+				25947A281FBE163600A68F8C /* RetailItem.cpp */,
+				25947A291FBE163600A68F8C /* RetailItem.hpp */,
 			);
 			path = "CPP-PRG-13-05-RetailItem-Class";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25947A221FBE153B00A68F8C /* main.cpp in Sources */,
+				25947A2A1FBE163600A68F8C /* RetailItem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

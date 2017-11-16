@@ -25,8 +25,72 @@
 //
 
 #include <iostream>
+#include "RetailItem.hpp"
+
+RetailItem createItem1();
+RetailItem createItem2();
+RetailItem createItem3();
+void displayItems(RetailItem, RetailItem, RetailItem);
 
 int main()
 {
+    RetailItem riItem1;
+    RetailItem riItem2;
+    RetailItem riItem3;
+    
+    riItem1 = createItem1();
+    riItem2 = createItem2();
+    riItem3 = createItem3();
+    
+    displayItems(riItem1, riItem2, riItem3);
+    
     return 0;
+}
+
+RetailItem createItem1()
+{
+    RetailItem item;
+    
+    item.setDescription("Jacket");
+    item.setUnitsOnHand(12);
+    item.setPrice(59.95);
+    
+    return item;
+}
+RetailItem createItem2()
+{
+    RetailItem item;
+    
+    item.setDescription("Designer Jeans");
+    item.setUnitsOnHand(40);
+    item.setPrice(34.95);
+    
+    return item;
+}
+RetailItem createItem3()
+{
+    RetailItem item;
+    
+    item.setDescription("Shirt");
+    item.setUnitsOnHand(40);
+    item.setPrice(24.95);
+    
+    return item;
+}
+void displayItems(RetailItem item1, RetailItem item2, RetailItem item3)
+{
+    std::cout << "Item #1:\n";
+    std::cout << "Description: " << item1.getDescription() << std::endl;
+    std::cout << "Units On Hand: " << item1.getUnitsOnHand() << std::endl;
+    std::cout << "Price: $" << item1.getPrice() << std::endl;
+    
+    std::cout << "\nItem #1:\n";
+    std::cout << "Description: " << item2.getDescription() << std::endl;
+    std::cout << "Units On Hand: " << item2.getUnitsOnHand() << std::endl;
+    std::cout << "Price: $" << item2.getPrice() << std::endl;
+    
+    std::cout << "\nItem #1:\n";
+    std::cout << "Description: " << item3.getDescription() << std::endl;
+    std::cout << "Units On Hand: " << item3.getUnitsOnHand() << std::endl;
+    std::cout << "Price: $" << item3.getPrice() << std::endl;
 }
